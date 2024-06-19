@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "lib": [
+      "DOM", "dom.iterable", "ESNext"
+    ],
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "src/@types"
+    ],
+    "baseUrl": "src",
+    "paths": {
+      "@controllers": [
+        "controllers"
+      ],
+      "@routes": [
+        "routes"
+      ],
+      "@core": [
+        "core"
+      ],
+      "@db": [
+        "db"
+      ],
+      "@middleware": [
+        "middleware"
+      ],
+      "@types": [
+        "types"
+      ]
+    }
+  },
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "./node_modules",
+    "./**/*.spec.ts"
+  ]
+}

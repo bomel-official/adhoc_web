@@ -1,0 +1,4 @@
+conf/keycloak.conf
+data/h2/
+data/transaction-logs
+.env

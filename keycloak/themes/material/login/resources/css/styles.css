@@ -1,0 +1,32 @@
+.login-pf body {
+    background: white;
+}
+
+.login-pf .login-pf-page {
+    background: #f7f7f7;
+    padding: 30px 20px 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-pf .login-pf-page #kc-header-wrapper {
+    font-size: 0;
+    background-image: url(../images/logo.png);
+    display: block;
+    height: 51px;
+    width: 242px;
+    background-size: contain;
+    background-position: center;
+}
+
+.login-pf .login-pf-page .card-pf {
+    border-radius: 8px;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .1);
+}
+
+.login-pf .login-pf-page .pf-c-button {
+    border-radius: 4px;
+}

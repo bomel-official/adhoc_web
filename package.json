@@ -1,0 +1,29 @@
+{
+  "name": "adhoc_web",
+  "version": "1.0.0",
+  "scripts": {
+    "init": "npm install && npm install --prefix frontend && npm install --prefix backend && npm install --prefix keycloak",
+    "dev:keycloak": "npm run dev --prefix keycloak",
+    "dev:keycloak:windows": "npm run dev:windows --prefix keycloak",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev": "concurrently --kill-others \"npm run dev:keycloak\" \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:windows": "concurrently --kill-others \"npm run dev:keycloak:windows\" \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "build:backend": "npm run build --prefix backend",
+    "build:frontend": "npm run build --prefix frontend",
+    "build:keycloak": "npm run build --prefix keycloak",
+    "build": "npm run build:backend && npm run build:frontend && npm run build:keycloak",
+    "start:backend": "npm run start --prefix backend",
+    "start:frontend": "npm run start --prefix frontend",
+    "start:keycloak": "npm run start --prefix keycloak",
+    "start": "concurrently --kill-others \"npm run start:keycloak\" \"npm run start:backend\" \"npm run start:frontend\"",
+    "prod": "npm run build && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

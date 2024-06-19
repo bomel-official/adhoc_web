@@ -1,0 +1,21 @@
+{
+  "name": "keycloak",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Keycloak",
+  "scripts": {
+    "generate": "node generate-default/scripts/index.js",
+    "dev": "bin/kc.sh start-dev",
+    "dev:windows": "bin\\kc.bat start-dev",
+    "build": "bin/kc.sh build",
+    "start": "bin/kc.sh start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@keycloak/keycloak-admin-client": "^24.0.5",
+    "adhoc_web": "file:..",
+    "dotenv": "^16.4.5"
+  }
+}
